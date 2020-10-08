@@ -1,6 +1,7 @@
 package br.usjt.ucsist.cadaluno.model;
 
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "usuario")
@@ -20,7 +21,7 @@ public class Usuario {
         this.senha = senha;
     }
     // gets e sets
-
+    @Ignore
     public Usuario(){}
 
     public int getId() {

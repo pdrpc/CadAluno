@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unidadesCurriculares">
+        <item>Usabilidade, Desenvolvimento Web, Mobile e Jogos</item>
+        <item>Sitemas Distribuídos e Mobile</item>
+    </string-array>
+</resources>

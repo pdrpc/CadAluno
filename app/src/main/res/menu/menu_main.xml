@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ui.MainActivity">
     <item
-        android:id="@+id/editar" android:icon="@drawable/ic_edit" app:showAsAction="always|withText" android:title="Editar"/>
+        android:id="@+id/editar" android:icon="@drawable/ic_edit" app:showAsAction="always|withText" android:title="Edit" />
 
     <item
-        android:id="@+id/sair" android:icon="@drawable/ic_exit" app:showAsAction="always|withText" android:title="Sair"/>
+        android:id="@+id/sair" android:icon="@drawable/ic_exit" app:showAsAction="always|withText" android:title="Exit" />
+
 
 </menu>
