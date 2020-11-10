@@ -5,6 +5,9 @@ import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+import br.usjt.ucsist.cadaluno.model.Usuario;
+import br.usjt.ucsist.cadaluno.model.UsuarioRepository;
+
 public class UsuarioViewModel extends AndroidViewModel {
 
     public UsuarioRepository usuarioRepository;

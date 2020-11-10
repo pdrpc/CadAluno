@@ -4,105 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.CadastroActivity">
+    tools:context=".ui.CadastroActivity"
+    android:background="@drawable/gradient">
 
-    <TextView
-        android:id="@+id/textViewHeader"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif-light"
-        android:text="Formulário de Cadastro"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:textSize="14pt"
-        android:layout_marginTop="48dp"
+        android:layout_height="0sp"
+        android:id="@+id/frameLayout"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
 
-    <EditText
-        android:id="@+id/editTextNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="256dp"
-        android:hint="   Nome"
-        android:background="@drawable/rounded_corner_grey"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/textViewHeader"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:autofillHints=""
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/editTextCpf"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:inputType="number"
-        android:hint="   CPF"
-        android:background="@drawable/rounded_corner_grey"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNome"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:hint="   Email"
-        android:background="@drawable/rounded_corner_grey"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextCpf"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:inputType="textEmailAddress"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/editTextSenha"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
-        android:hint="   Senha"
-        android:background="@drawable/rounded_corner_grey"
-        android:textSize="24sp"
-        app:layout_constraintTop_toBottomOf="@+id/editTextEmail"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:autofillHints=""
-        android:inputType="textPassword" />
-
-
-
-    <Button
-        android:id="@+id/buttonSalvar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="salvar"
-        android:text="SALVAR"
-        android:background="@drawable/rounded_corner_accent"
-        android:textSize="12pt"
-        android:textColor="@color/colorBackGround"
-        android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="48dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
